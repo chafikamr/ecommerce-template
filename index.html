@@ -12,6 +12,7 @@
     <title>Responsive Navbar | CodingNepal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -21,7 +22,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
+<body id="body">
     <div class="load-container">
         <div class="lds-ripple">
             <div></div>
@@ -36,16 +37,19 @@
         <div class="container">
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
+                <i class="bi bi-list"></i>
           </label>
-            <label class="logo">DesignX</label>
+            <label class="logo"><img src="images/cv.svg" alt=""></label>
             <ul>
+                <li style="text-align: right; color: white; "><label for="check"><i class="bi checkbtn x bi-x-square"></i></label></li>
                 <li><a class="active" href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">Feedback</a></li>
             </ul>
+
+
         </div>
 
     </nav>
@@ -57,42 +61,42 @@
 
     <div class="container ser_feat">
         <div class="row feats-border-top main-shadow">
-            <div class="col-md-3 feat">
-                <div class="img_container">
+            <div class="col-md-3 feat" style="text-align: center;">
+                <!-- <div class="img_container">
                     <img src="https://startertemplatecloud.com/g02/wp-content/uploads/sites/11/2020/10/shipping_01.png" alt="">
-                </div>
+                </div> -->
                 <div class="details">
                     <span>Nontoxic Printmaking</span>
-                    <span>lorem ipsum dolor </span>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae rem fugiat possimus expedita inventore nam similique sed quo ducimus, esse totam, distinctio nulla enim exercitationem nihil odit, quam dolorem autem.</span>
                 </div>
             </div>
-            <div class="col-md-3 feat">
-                <div class="img_container">
+            <!-- <div class="col-md-3 feat"> -->
+            <!-- <div class="img_container">
                     <img src="https://startertemplatecloud.com/g02/wp-content/uploads/sites/11/2020/10/money-bac-2.png" alt="">
-                </div>
-                <div class="details">
+                </div> -->
+            <!-- <div class="details">
                     <span>Customer Service</span>
                     <span>lorem ipsum dolor over </span>
                 </div>
-            </div>
-            <div class="col-md-3 feat">
-                <div class="img_container">
+            </div> -->
+            <!-- <div class="col-md-3 feat"> -->
+            <!-- <div class="img_container">
                     <img src="https://startertemplatecloud.com/g02/wp-content/uploads/sites/11/2020/10/support.png" alt="">
-                </div>
-                <div class="details">
+                </div> -->
+            <!-- <div class="details">
                     <span>Money Back Guarantee</span>
                     <span>lorem ipsum dolor over  </span>
-                </div>
+                </div> -->
+            <!-- </div>
+        <div class="col-md-3 feat">
+            <div class="img_container">
+                <img src="https://startertemplatecloud.com/g02/wp-content/uploads/sites/11/2020/10/non-toxic.png" alt="">
             </div>
-            <div class="col-md-3 feat">
-                <div class="img_container">
-                    <img src="https://startertemplatecloud.com/g02/wp-content/uploads/sites/11/2020/10/non-toxic.png" alt="">
-                </div>
-                <div class="details">
-                    <span>Shipping Perks</span>
-                    <span>lorem ipsum dolor  </span>
-                </div>
+            <div class="details">
+                <span>Shipping Perks</span>
+                <span>lorem ipsum dolor  </span>
             </div>
+        </div> -->
         </div>
     </div>
     <!--ddtart categories-->
@@ -136,50 +140,68 @@
                 <div class="card mb-4 box-shadow">
                     <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="images/nbnbn.png" data-holder-rendered="true" style="width: 100%; display: block;">
                     <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group  align-items-center">
+                                <button type="button" class="btn btn-sm btn-outline-secondary" style="border: none; display:flex;align-items: center; ">Men</button>
+                                <img style="width: 50px; height: 20px;" src="https://graciesprov.com/wp-content/uploads/2017/12/five-stars4.png" alt="">
+                            </div>
+                            <small class="text-muted" style="text-decoration: line-through;">133 DH</small>
+                        </div>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary" style="margin-right:10px;border: none;background-color: #607D8B;color: white;padding: 10px 44px;">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary" style="display: none;">Edit</button>
                             </div>
-                            <small class="text-muted">9 mins</small>
+                            <span class="text-muted" style="font-size: 20px; font-weight: bold;">100 DH</span>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card mb-4 box-shadow">
-                    <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5G22ODLEylyV4cyoI41JW75gwpmcJ8H9Zsg&usqp=CAU" data-holder-rendered="true"
-                        style=" width: 100%; display: block;">
-                    <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                            </div>
-                            <small class="text-muted">9 mins</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
             <div class="col-md-4">
                 <div class="card mb-4 box-shadow">
                     <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="images/nbnbn.png" data-holder-rendered="true" style="width: 100%; display: block;">
                     <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
                         <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            <div class="btn-group  align-items-center">
+                                <button type="button" class="btn btn-sm btn-outline-secondary" style="border: none; display:flex;align-items: center; ">Men</button>
+                                <img style="width: 50px; height: 20px;" src="https://graciesprov.com/wp-content/uploads/2017/12/five-stars4.png" alt="">
                             </div>
-                            <small class="text-muted">9 mins</small>
+                            <small class="text-muted" style="text-decoration: line-through;">133 DH</small>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group ">
+                                <button type="button" class="btn btn-sm btn-outline-secondary" style="margin-right:10px;border: none;background-color: #607D8B;color: white;padding: 10px 44px;">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary" style="display: none;">Edit</button>
+                            </div>
+                            <span class="text-muted" style="font-size: 20px; font-weight: bold;">100 DH</span>
                         </div>
                     </div>
                 </div>
             </div>
-
+            <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                    <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="images/nbnbn.png" data-holder-rendered="true" style="width: 100%; display: block;">
+                    <div class="card-body">
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group  align-items-center">
+                                <button type="button" class="btn btn-sm btn-outline-secondary" style="border: none; display:flex;align-items: center; ">Men</button>
+                                <img style="width: 50px; height: 20px;" src="https://graciesprov.com/wp-content/uploads/2017/12/five-stars4.png" alt="">
+                            </div>
+                            <small class="text-muted" style="text-decoration: line-through;">133 DH</small>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary" style="margin-right:10px;border: none;background-color: #607D8B;color: white;padding: 10px 44px;">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary" style="display: none;">Edit</button>
+                            </div>
+                            <span class="text-muted" style="font-size: 20px; font-weight: bold;">100 DH</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </div>
@@ -192,7 +214,7 @@
 
         <div class="gtco-testimonials main-shadow">
             <header class="sec_header row ">
-                <h2>Men</h2>
+                <h2>Testimonials <img style="width: 50px; height: 20px;" src="https://graciesprov.com/wp-content/uploads/2017/12/five-stars4.png" alt=""> (23 ratings) </h2>
 
             </header>
             <div class="owl-carousel owl-carousel1 owl-theme">
@@ -202,8 +224,11 @@
                             <h5>Ronne Galle <br />
                                 <span> Project Manager </span>
                             </h5>
+
                             <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat ” </p>
+
                         </div>
+
                     </div>
                 </div>
                 <div>
@@ -257,53 +282,63 @@
                 <div class="card mb-4 box-shadow">
                     <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="images/nbnbn.png" data-holder-rendered="true" style="width: 100%; display: block;">
                     <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
                         <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            <div class="btn-group  align-items-center">
+                                <button type="button" class="btn btn-sm btn-outline-secondary" style="border: none; display:flex;align-items: center; ">Men</button>
+                                <img style="width: 50px; height: 20px;" src="https://graciesprov.com/wp-content/uploads/2017/12/five-stars4.png" alt="">
                             </div>
-                            <small class="text-muted">9 mins</small>
+                            <small class="text-muted" style="text-decoration: line-through;">133 DH</small>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card mb-4 box-shadow">
-                    <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5G22ODLEylyV4cyoI41JW75gwpmcJ8H9Zsg&usqp=CAU" data-holder-rendered="true"
-                        style=" width: 100%; display: block;">
-                    <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary" style="margin-right:10px;border: none;background-color: #607D8B;color: white;padding: 10px 44px;">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary" style="display: none;">Edit</button>
                             </div>
-                            <small class="text-muted">9 mins</small>
+                            <span class="text-muted" style="font-size: 20px; font-weight: bold;">100 DH</span>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-4">
-                <div class="card mb-4 box-shadow">
-                    <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="images/nbnbn.png" data-holder-rendered="true" style="width: 100%; display: block;">
-                    <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                            </div>
-                            <small class="text-muted">9 mins</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
 
 
         </div>
     </div>
+    <footer>
+        <div class="container">
+            <div class="row ">
+
+                <div class="col-md-4 contact-us">
+                    <header>Contact </header>
+                    <div class="social"><i class="bi bi-phone"></i></i> Phone / +212615290978</div>
+                    <div class="social"><i class="bi bi-facebook"></i> Facebook / beststore</div>
+                    <div class="social"><i class="bi bi-instagram"></i> instagram / bestStore</div>
+                    <div class="social"><i class="bi bi-whatsapp"></i>whatsapp / 0615280879</div>
+                </div>
+                <div class="col-md-4 categories">
+                    <header>categories </header>
+                    <div class="cat"> men</div>
+                    <div class="cat">woman</div>
+                    <div class="cat"> Home</div>
+                    <div class="cat">back to school</div>
+                </div>
+                <div class="col-md-4 links">
+                    <header>Links </header>
+                    <div class="link"> Home</div>
+                    <div class="link">contact</div>
+                    <div class="link"> about</div>
+                    <div class="link">refund</div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        <div class="copy">
+            <span>All rights reserver - &copy; 2021 - www.store.com</span>
+        </div>
+    </footer>
     <script src="js/main.js"></script>
 </body>
 

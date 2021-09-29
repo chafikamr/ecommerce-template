@@ -30,3 +30,12 @@
         carousels();
     })(jQuery);
 })();
+
+
+
+
+
+
+$('.checkbtn').click(function() {
+    $("body").toggleClass("fixedPosition");
+})
