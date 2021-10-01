@@ -771,3 +771,25 @@
         .about-us .card img {
             width: 100%;
         }
+        /**** Contact Us **** ***/
+        
+        .Contact-us {
+            margin-top: 30px;
+        }
+        
+        .Contact-us .card {
+            padding: 30px;
+            margin-top: 20px;
+        }
+        
+        .Contact-us .card header h3 {
+            border-left: 5px solid black;
+            padding-left: 10px;
+            font-size: 16px;
+            background-color: #f7f7f7;
+            padding: 10px;
+        }
+        
+        .Contact-us .card img {
+            width: 100%;
+        }
