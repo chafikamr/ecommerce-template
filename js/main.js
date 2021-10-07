@@ -88,3 +88,25 @@ $(document).ready(function() {
     });
 
 });
+
+
+
+
+
+
+let goo = document.querySelectorAll('input[name="radio-3"]');
+if (goo.length != 0) {
+    goo.forEach(
+        function(element, inx) {
+            element.addEventListener('change', function() {
+
+                if (inx == 2) {
+                    document.getElementById('forminator-field-textarea-1').style.display = "block"
+                } else {
+                    document.getElementById('forminator-field-textarea-1').style.display = "none"
+                }
+
+            })
+        }
+    )
+}

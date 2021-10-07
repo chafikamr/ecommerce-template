@@ -138,6 +138,15 @@
             .checkbtn {
                 display: block;
             }
+            .logo img {
+                background: white;
+                padding: 10px;
+                border-radius: 8px;
+                width: fit-content;
+            }
+            .active {
+                color: white !important;
+            }
             nav ul {
                 position: absolute;
                 width: 100%;
@@ -274,12 +283,11 @@
             font-size: 13px;
         }
         /*************/
-        
-        section.categories .cat {
+        /* section.categories .cat {
             background-color: gray;
             height: 200px;
             margin-bottom: 20px;
-        }
+        } */
         
         .sec_header {
             /* text-align: center; */
@@ -303,8 +311,14 @@
             margin-left: 0;
         }
         
-        .feats-border-top {
+        .custom-border-top-green {
             border-top: 5px solid #009688;
+            /* background-color: ; */
+        }
+        
+        .custom-border-top-black {
+            border-top: 5px solid #000000;
+            /* background-color: ; */
         }
         
         .white-back {
@@ -384,6 +398,10 @@
         .gtco-testimonials .owl-dots .active {
             box-shadow: none;
         }
+        /****** product card ***/
+        
+        .img_product_container img {}
+        /****** product card ***/
         
         .gtco-testimonials .owl-dots .active span {
             background: #009688;
@@ -792,23 +810,87 @@
         }
         /**** Contact Us **** ***/
         
-        .Contact-us {
+        .contact-us {
             margin-top: 30px;
         }
         
-        .Contact-us .card {
+        .contact-us .card {
             padding: 30px;
             margin-top: 20px;
         }
         
-        .Contact-us .card header h3 {
+        header.header-border-one-side h3 {
             border-left: 5px solid black;
             padding-left: 10px;
             font-size: 16px;
-            background-color: #f7f7f7;
-            padding: 10px;
+            /* background-color: #f7f7f7; */
+            /* padding: 10px; */
         }
         
-        .Contact-us .card img {
+        .contact-us .card img {
             width: 100%;
+        }
+        /**** truck order section ****/
+        
+        .icon {
+            background-color: coral;
+            color: white;
+            width: 50px;
+            height: 50px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            border-radius: 50%;
+            position: relative;
+        }
+        
+        .icon::after {
+            content: '';
+            position: absolute;
+            width: 150px;
+            height: 2px;
+            background-color: tomato;
+            right: -150px;
+        }
+        
+        .last::after {
+            display: none;
+        }
+        
+        @media (max-width:767px) {
+            .icon::after {
+                content: '';
+                position: absolute;
+                width: 29px;
+                transform: rotate( 90deg);
+                height: 4px;
+                background-color: tomato;
+                right: 10px;
+                top: 63px;
+            }
+            .icon {
+                float: left;
+                margin-bottom: 30px;
+                margin-right: 20px;
+            }
+            .icon i {
+                z-index: 3;
+            }
+        }
+        /******* end truck order sectionn ***/
+        
+        @media (max-width: 768px) {
+            .custom-row>* {
+                padding: 0;
+            }
+        }
+        
+        .cat-list {
+            height: 490px;
+        }
+        
+        @media (max-width: 768px) {
+            .cat-list {
+                height: 300px;
+            }
         }

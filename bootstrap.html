@@ -8,13 +8,326 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <title>Bootstrap tutorial</title>
 </head>
 
 <body>
-    <h1>Hello, world!</h1>
+    <!---start navbar -->
 
+    <nav class="navbar bg-light navbar-light border-1 navbar-expand-lg">
+        <div class="container">
+            <a href="#" class="navbar-brand ">
+                <span class="fw-bold text-muted">CPomodoro</span>
+            </a>
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse  navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+    </nav>
+    <!--End navbar-->
+    <section class="mt-4">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-5 text-center text-md-start">
+                    <h1>
+                        <div class="display-2">Black two</div>
+                        <div class="display-5 text-muted">Your coding skills</div>
+                    </h1>
+                    <p class="lead my-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <a href="#" class="btn  btn-secondary btn-lg">Buy Now</a>
+                </div>
+                <div class="col-md-5 text-center">
+                    <img src="https://i.dlpng.com/static/png/6736528_preview.png" class="img-fluid d-none d-md-block" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!---start pricing section-->
+    <section id="pricing-section" class="bg-light mt-5 p-4">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2>pricing plans</h2>
+                <p class="lead text-muted">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+            </div>
+            <div class="row my-5 align-items-center justify-content-center g-0">
+                <div class="col-8 col-lg-4 col-xl-3">
+                    <div class="card border-0">
+                        <div class="card-body text-center py-4 ">
+                            <h4 class="card-title ">Starter Edition</h4>
+                            <p class="card-subtitle lead text-muted"> Download Only</p>
+                            <p class="display-5 my-4 text-primary fw-bold">$12.99</p>
+                            <P class="card-text mx-4 text-muted d-none d-lg-block">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </P>
+                            <a href="#" class="btn btn-outline-primary btn-lg ">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-9 col-lg-4">
+                    <div class="card border-primary">
+                        <div class="card-header text-center bg-light"> Most Popular</div>
+                        <div class="card-body text-center py-5 ">
+                            <h4 class="card-title ">Premium Edition</h4>
+                            <p class="card-subtitle lead text-muted">Ultimate rights</p>
+                            <p class="display-5 my-4 text-primary fw-bold">$30.99</p>
+                            <P class="card-text mx-4 text-muted d-none d-lg-block">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </P>
+                            <a href="#" class="btn btn-outline-primary btn-lg ">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 col-lg-4 col-xl-3">
+                    <div class="card border-0">
+                        <div class="card-body text-center py-4 ">
+                            <h4 class="card-title ">Starter Edition</h4>
+                            <p class="card-subtitle lead text-muted"> Download Only</p>
+                            <p class="display-5 my-4 text-primary fw-bold">$12.99</p>
+                            <P class="card-text mx-4 text-muted d-none d-lg-block">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </P>
+                            <a href="#" class="btn btn-outline-primary btn-lg ">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--  end pricing section -->
+
+
+    <!-- start cards section -->
+
+
+    <section id="xards">
+        <div class="container">
+            <div class="row justify-content-center align-items-center g-5 ">
+
+                <div class="col-12 col-lg-3 mt-4">
+                    <div class="card border-top-3 ">
+                        <div class="card-header text-muted text-center bg-warning">
+                            30% Off
+                        </div>
+                        <img src="https://ik.imagekit.io/ikmedia/backlit.jpg" class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                            <h4 class="card-title text-cente text-primary">
+                                Hello Card
+                            </h4>
+                            <p class="card-subtitle lead text-muted text-center">
+                                Hello there Here You Can Find Anything
+                            </p>
+                            <div class="card-text text-success">
+                                12.99 MAD
+                            </div>
+                            <a href="#" class="btn btn-outline-primary text-center m-2">Details</a>
+                        </div>
+                        <div class="card-footer text-muted text-center">
+                            *****
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 mt-4">
+                    <div class="card border-top-3 ">
+                        <div class="card-header text-muted text-center bg-warning">
+                            30% Off
+                        </div>
+                        <img src="https://ik.imagekit.io/ikmedia/backlit.jpg" class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                            <h4 class="card-title text-cente text-primary">
+                                Hello Card
+                            </h4>
+                            <p class="card-subtitle lead text-muted text-center">
+                                Hello there Here You Can Find Anything
+                            </p>
+                            <div class="card-text text-success">
+                                12.99 MAD
+                            </div>
+                            <a href="#" class="btn btn-outline-primary text-center m-2">Details</a>
+                        </div>
+                        <div class="card-footer text-muted text-center">
+                            *****
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 mt-4">
+                    <div class="card border-top-3 ">
+                        <div class="card-header text-muted text-center bg-warning">
+                            30% Off
+                        </div>
+                        <img src="https://ik.imagekit.io/ikmedia/backlit.jpg" class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                            <h4 class="card-title text-cente text-primary">
+                                Hello Card
+                            </h4>
+                            <p class="card-subtitle lead text-muted text-center">
+                                Hello there Here You Can Find Anything
+                            </p>
+                            <div class="card-text text-success">
+                                12.99 MAD
+                            </div>
+                            <a href="#" class="btn btn-outline-primary text-center m-2">Details</a>
+                        </div>
+                        <div class="card-footer text-muted text-center">
+                            *****
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 mt-4">
+                    <div class="card border-top-3 ">
+                        <div class="card-header text-muted text-center bg-warning">
+                            30% Off
+                        </div>
+                        <img src="https://ik.imagekit.io/ikmedia/backlit.jpg" class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                            <h4 class="card-title text-cente text-primary">
+                                Hello Card
+                            </h4>
+                            <p class="card-subtitle lead text-muted text-center">
+                                Hello there Here You Can Find Anything
+                            </p>
+                            <div class="card-text text-success">
+                                12.99 MAD
+                            </div>
+                            <a href="#" class="btn btn-outline-primary text-center m-2">Details</a>
+                        </div>
+                        <div class="card-footer text-muted text-center">
+                            *****
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 mt-4">
+                    <div class="card border-top-3 ">
+                        <div class="card-header text-muted text-center bg-warning">
+                            30% Off
+                        </div>
+                        <img src="https://ik.imagekit.io/ikmedia/backlit.jpg" class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                            <h4 class="card-title text-cente text-primary">
+                                Hello Card
+                            </h4>
+                            <p class="card-subtitle lead text-muted text-center">
+                                Hello there Here You Can Find Anything
+                            </p>
+                            <div class="card-text text-success">
+                                12.99 MAD
+                            </div>
+                            <a href="#" class="btn btn-outline-primary text-center m-2">Details</a>
+                        </div>
+                        <div class="card-footer text-muted text-center">
+                            *****
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 mt-4">
+                    <div class="card border-top-3 ">
+                        <div class="card-header text-muted text-center bg-warning">
+                            30% Off
+                        </div>
+                        <img src="https://ik.imagekit.io/ikmedia/backlit.jpg" class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                            <h4 class="card-title text-cente text-primary">
+                                Hello Card
+                            </h4>
+                            <p class="card-subtitle lead text-muted text-center">
+                                Hello there Here You Can Find Anything
+                            </p>
+                            <div class="card-text text-success">
+                                12.99 MAD
+                            </div>
+                            <a href="#" class="btn btn-outline-primary text-center m-2">Details</a>
+                        </div>
+                        <div class="card-footer text-muted text-center">
+                            *****
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 mt-4">
+                    <div class="card border-top-3 ">
+                        <div class="card-header text-muted text-center bg-warning">
+                            30% Off
+                        </div>
+                        <img src="https://ik.imagekit.io/ikmedia/backlit.jpg" class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                            <h4 class="card-title text-cente text-primary">
+                                Hello Card
+                            </h4>
+                            <p class="card-subtitle lead text-muted text-center">
+                                Hello there Here You Can Find Anything
+                            </p>
+                            <div class="card-text text-success">
+                                12.99 MAD
+                            </div>
+                            <a href="#" class="btn btn-outline-primary text-center m-2">Details</a>
+                        </div>
+                        <div class="card-footer text-muted text-center">
+                            *****
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 mt-4">
+                    <div class="card border-top-3 ">
+                        <div class="card-header text-muted text-center bg-warning">
+                            30% Off
+                        </div>
+                        <img src="https://ik.imagekit.io/ikmedia/backlit.jpg" class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                            <h4 class="card-title text-cente text-primary">
+                                Hello Card
+                            </h4>
+                            <p class="card-subtitle lead text-muted text-center">
+                                Hello there Here You Can Find Anything
+                            </p>
+                            <div class="card-text text-success">
+                                12.99 MAD
+                            </div>
+                            <a href="#" class="btn btn-outline-primary text-center m-2">Details</a>
+                        </div>
+                        <div class="card-footer text-muted text-center">
+                            *****
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->

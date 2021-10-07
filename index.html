@@ -1,28 +1,46 @@
 <!DOCTYPE html>
-<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<!-- Created By Chafik Amraoui - https://github.com/chafikamr -->
 <html lang="en" dir="ltr">
 
 <head>
-    <script>
-        window.onload = function() {
-            document.querySelector('.load-container').style.display = "none";
-        }
-    </script>
     <meta charset="utf-8">
     <title>Responsive Navbar | CodingNepal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap CSS -->
+
+    <!--Show Loading Animation -->
+    <script>
+        window.onload = () => {
+            document.querySelector('.load-container').style.display = "none"
+        }
+    </script>
+
+    <!--Chrome Theme Color-->
+    <meta name="theme-color" content="#0082e6">
+
+    <!-- Bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!--jquery CDN-->
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+
+    <!--Bootstrap Css-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <!--Owl Carousel library js and css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!--Font Awesom Library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <!--Author Stylesheet-->
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body id="body">
+
+    <!--Loading Animation-->
     <div class="load-container">
         <div class="lds-ripple">
             <div></div>
@@ -30,202 +48,283 @@
         </div>
     </div>
 
+
+    <!--Top Bar-->
     <div class="top_nav">
-        <span>Free Shipping</span>
+        <marquee direction=”left” scrollamount="5">Free Shipping -- Monyback -- 24/24 support
+        </marquee>
     </div>
-    <nav>
+
+    <!--Main Navigation-->
+    <nav class="shadow-sm">
         <div class="container">
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
                 <i class="bi bi-list"></i>
-          </label>
-            <label class="logo"><img src="images/cv.svg" alt=""></label>
+            </label>
+            <label class="logo">
+                <img src="images/cv.svg" alt="logo">
+            </label>
             <ul>
-                <li style="text-align: right; color: white; "><label for="check"><i class="bi checkbtn x bi-x-square"></i></label></li>
+                <li style="text-align: right; color: white; ">
+
+                    <label for="check">
+                        <i class="bi checkbtn x bi-x-square"></i>
+                    </label>
+                </li>
                 <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="product.html">product</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="#">Feedback</a></li>
+                <li><a href="truck _rder.html">truck order</a></li>
+                <label class="logo d-block d-md-none">
+                    <img src="images/cv.svg" alt="logo">
+                </label>
             </ul>
 
-
         </div>
-
     </nav>
+
+    <!--Home Page banner-->
     <div class="container">
         <section class="banner main-shadow">
-            <img src="images/WolcomeToAlphaStore.png" alt="">
+            <img src="images/WolcomeToAlphaStore.png" alt="banner img">
         </section>
     </div>
 
-    <div class="container ser_feat">
-        <div class="row feats-border-top main-shadow">
+    <!---start offers-->
+    <section>
+        <div class="container mt-4 p-0">
+            <div class="row">
+                <div class="col-md-4 mt-3 d-none d-md-block ">
+                    <div class="features bg-white p-3 custom-border-top-green main-shadow">
+                        <header class="sec_header d-flex pb-2 justify-content-between align-items-center">
+                            <h2>categories</h2>
+                            <a href="#" class="btn btn-sm btn-outline-primary"> Details</a>
+                        </header>
+                        <div class="overflow-hidden">
+                            <img src="images/WolcomeToAlphaStore.png" class="w-100" alt="">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4 mt-3 d-none d-md-block ">
+                    <div class="features bg-white p-3 custom-border-top-green main-shadow">
+                        <header class="sec_header d-flex pb-2 justify-content-between align-items-center">
+                            <h2>categories</h2>
+                            <a href="#" class="btn btn-sm btn-outline-primary"> Details</a>
+                        </header>
+                        <div class="overflow-hidden">
+                            <img src="images/WolcomeToAlphaStore.png" class="w-100" alt="">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4 mt-3 d-none d-md-block ">
+                    <div class="features bg-white p-3 custom-border-top-green main-shadow">
+                        <header class="sec_header d-flex pb-2 justify-content-between align-items-center">
+                            <h2>categories</h2>
+                            <a href="#" class="btn btn-sm btn-outline-primary"> Details</a>
+                        </header>
+                        <div class="overflow-hidden">
+                            <img src="images/WolcomeToAlphaStore.png" class="w-100" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--Start features-->
+    <section>
+        <div class="container mt-4 p-0">
+            <div class="row mt-3">
+                <div class="col-md-12 mt-3">
+                    <div class="categories bg-white custom-border-top-green main-shadow p-3 row">
+                        <header class="sec_header d-flex justify-content-between align-items-center d-block pb-2">
+                            <h2 class="p-0">Features</h2>
+                            <a href="#" class="btn btn-outline-primary btn-sm ">View More</a>
+                        </header>
+                        <div class="feat-item col-md-4 text-center p-3 mb-2">
+                            <div class="img">
+                                <img src="https://startertemplatecloud.com/g02/wp-content/uploads/sites/11/2020/10/shipping_01.png" alt="">
+                            </div>
+                            <div class="text">
+                                <h3>Shipping Perks</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, aspernatur!</p>
+                            </div>
+                        </div>
+
+                        <div class="feat-item col-md-4 text-center p-3 mb-2">
+                            <div class="img">
+                                <img src="https://startertemplatecloud.com/g02/wp-content/uploads/sites/11/2020/10/money-bac-2.png" alt="">
+                            </div>
+                            <div class="text">
+                                <h3>Money Back Guarantee</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, aspernatur!</p>
+                            </div>
+                        </div>
+
+                        <div class="feat-item col-md-4 text-center p-3 mb-2">
+                            <div class="img">
+                                <img src="https://startertemplatecloud.com/g02/wp-content/uploads/sites/11/2020/10/support.png" alt="">
+                            </div>
+                            <div class="text">
+                                <h3>Customer Service</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, aspernatur!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!---about store paragraph-->
+    <div class="container ser_feat d-block d-md-none">
+        <div class="row custom-border-top-green main-shadow">
             <div class="col-md-3 feat" style="text-align: center;">
-                <!-- <div class="img_container">
-                    <img src="https://startertemplatecloud.com/g02/wp-content/uploads/sites/11/2020/10/shipping_01.png" alt="">
-                </div> -->
+
                 <div class="details">
                     <span>Nontoxic Printmaking</span>
                     <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae rem fugiat possimus expedita inventore nam similique sed quo ducimus, esse totam, distinctio nulla enim exercitationem nihil odit, quam dolorem autem.</span>
                 </div>
             </div>
-            <!-- <div class="col-md-3 feat"> -->
-            <!-- <div class="img_container">
-                    <img src="https://startertemplatecloud.com/g02/wp-content/uploads/sites/11/2020/10/money-bac-2.png" alt="">
-                </div> -->
-            <!-- <div class="details">
-                    <span>Customer Service</span>
-                    <span>lorem ipsum dolor over </span>
-                </div>
-            </div> -->
-            <!-- <div class="col-md-3 feat"> -->
-            <!-- <div class="img_container">
-                    <img src="https://startertemplatecloud.com/g02/wp-content/uploads/sites/11/2020/10/support.png" alt="">
-                </div> -->
-            <!-- <div class="details">
-                    <span>Money Back Guarantee</span>
-                    <span>lorem ipsum dolor over  </span>
-                </div> -->
-            <!-- </div>
-        <div class="col-md-3 feat">
-            <div class="img_container">
-                <img src="https://startertemplatecloud.com/g02/wp-content/uploads/sites/11/2020/10/non-toxic.png" alt="">
-            </div>
-            <div class="details">
-                <span>Shipping Perks</span>
-                <span>lorem ipsum dolor  </span>
-            </div>
-        </div> -->
         </div>
     </div>
+
     <!--ddtart categories-->
     <section class="categories">
-        <div class="container">
-
-
-            <div class="white-back main-shadow ">
-
+        <div class="container ">
+            <div class="bg-white mt-4 p-2 custom-border-top-black main-shadow ">
                 <header class="sec_header">
                     <h2>categories</h2>
-
                 </header>
-
-                <span class="cat-label">Men</span>
-                <span class="cat-label">Woman</span>
-                <span class="cat-label">Clothes</span>
-                <span class="cat-label">Home</span>
-                <span class="cat-label">Back To School</span>
-                <span class="cat-label">Men</span>
-                <span class="cat-label">Woman</span>
-                <span class="cat-label">Clothes</span>
-                <span class="cat-label">Home</span>
-                <span class="cat-label">Back To School</span>
-
+                <span class="cat-label">Men (10)</span>
+                <span class="cat-label">Woman (10)</span>
+                <span class="cat-label">Clothes (10)</span>
+                <span class="cat-label">Home (10)</span>
+                <span class="cat-label">Back To School (10)</span>
+                <span class="cat-label">Men (10)</span>
+                <span class="cat-label">Woman (10)</span>
+                <span class="cat-label">Clothes (10)</span>
+                <span class="cat-label">Home (10)</span>
+                <span class="cat-label">Back To School (10)</span>
             </div>
         </div>
-
     </section>
-    <div class="container">
-
-        <div class="row product-bg main-shadow ">
-            <header class="sec_header">
-                <h2>Men</h2>
-
-            </header>
 
 
-
-            <div class="col-md-4">
-                <div class="card mb-4 box-shadow">
-                    <div class="img_product_container">
-                        <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="https://startertemplatecloud.com/g02/wp-content/uploads/sites/11/2020/10/mug-02.jpg" data-holder-rendered="true"
-                            style="width: 100%; display: block;">
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group  align-items-center">
-                                <button type="button" class="btn btn-sm btn-outline-secondary" style="border: none; display:flex;align-items: center; ">Men</button>
-                                <img style="width: 50px; height: 20px;" src="https://graciesprov.com/wp-content/uploads/2017/12/five-stars4.png" alt="">
-                            </div>
-                            <small class="text-muted" style="text-decoration: line-through;">133 DH</small>
+    <!---- Products row -->
+    <section>
+        <div class="container">
+            <div class="row bg-white mt-4  custom-border-top-black main-shadow main-shadow ">
+                <header class="sec_header p-2">
+                    <h2>Men</h2>
+                </header>
+                <div class="col-md-4 my-3">
+                    <div class="card  ">
+                        <div class="img_product_container">
+                            <img class="card-img-top w-100 d-block" alt="Product-thumbnail" src="https://startertemplatecloud.com/g02/wp-content/uploads/sites/11/2020/10/mug-02.jpg" data-holder-rendered="true">
                         </div>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary" style="margin-right:10px;border: none;background-color: #607D8B;color: white;padding: 10px 44px;">View</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary" style="display: none;">Edit</button>
+                        <div class="card-body">
+                            <h3 class="card-title h5">Black Nice Mug For Coffee</h3>
+                            <p class="card-text">This is a wider card with supporting text below </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group  align-items-center">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary" style="border: none; display:flex;align-items: center; ">Men</button>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-half text-warning"></i>
+                                </div>
+                                <small class="text-muted text-decoration-line-through"> 133 DH</small>
                             </div>
-                            <span class="text-muted" style="font-size: 20px; font-weight: bold;">100 DH</span>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary" style="margin-right:10px;border: none;background-color: #607D8B;color: white;padding: 10px 44px;">View</button>
+                                </div>
+                                <span class="text-muted fw-bold" style="font-size: 20px;">100 DH</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4  my-3">
+                    <div class="card  ">
+                        <div class="img_product_container">
+                            <img class="card-img-top w-100 d-block" alt="Product-thumbnail" src="https://startertemplatecloud.com/g02/wp-content/uploads/sites/11/2020/10/mug-02.jpg" data-holder-rendered="true">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title h5">Black Nice Mug For Coffee</h3>
+                            <p class="card-text">This is a wider card with supporting text below </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group  align-items-center">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary" style="border: none; display:flex;align-items: center; ">Men</button>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-half text-warning"></i>
+                                </div>
+                                <small class="text-muted text-decoration-line-through"> 133 DH</small>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary" style="margin-right:10px;border: none;background-color: #607D8B;color: white;padding: 10px 44px;">View</button>
+                                </div>
+                                <span class="text-muted fw-bold" style="font-size: 20px;">100 DH</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4  my-3">
+                    <div class="card">
+                        <span class="offer">30% OFF</span>
+                        <div class="img_product_container">
+                            <img class="card-img-top w-100 d-block" alt="Product-thumbnail" src="https://startertemplatecloud.com/g02/wp-content/uploads/sites/11/2020/10/mug-02.jpg" data-holder-rendered="true">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title h5">Black Nice Mug For Coffee</h3>
+                            <p class="card-text">This is a wider card with supporting text below </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group  align-items-center">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary" style="border: none; display:flex;align-items: center; ">Men</button>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-half text-warning"></i>
+                                </div>
+                                <small class="text-muted text-decoration-line-through"> 133 DH</small>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary" style="margin-right:10px;border: none;background-color: #607D8B;color: white;padding: 10px 44px;">View</button>
+                                </div>
+                                <span class="text-muted fw-bold" style="font-size: 20px;">100 DH</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card mb-4 box-shadow">
-                    <div class="img_product_container">
-                        <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="https://startertemplatecloud.com/g02/wp-content/uploads/sites/11/2020/10/mug-02.jpg" data-holder-rendered="true"
-                            style="width: 100%; display: block;">
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group  align-items-center">
-                                <button type="button" class="btn btn-sm btn-outline-secondary" style="border: none; display:flex;align-items: center; ">Men</button>
-                                <img style="width: 50px; height: 20px;" src="https://graciesprov.com/wp-content/uploads/2017/12/five-stars4.png" alt="">
-                            </div>
-                            <small class="text-muted" style="text-decoration: line-through;">133 DH</small>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group ">
-                                <button type="button" class="btn btn-sm btn-outline-secondary" style="margin-right:10px;border: none;background-color: #607D8B;color: white;padding: 10px 44px;">View</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary" style="display: none;">Edit</button>
-                            </div>
-                            <span class="text-muted" style="font-size: 20px; font-weight: bold;">100 DH</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card mb-4 box-shadow">
-                    <div class="img_product_container">
-                        <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="https://startertemplatecloud.com/g02/wp-content/uploads/sites/11/2020/10/mug-02.jpg" data-holder-rendered="true"
-                            style="width: 100%; display: block;">
-                    </div>
-
-                    <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group  align-items-center">
-                                <button type="button" class="btn btn-sm btn-outline-secondary" style="border: none; display:flex;align-items: center; ">Men</button>
-                                <img style="width: 50px; height: 20px;" src="https://graciesprov.com/wp-content/uploads/2017/12/five-stars4.png" alt="">
-                            </div>
-                            <small class="text-muted" style="text-decoration: line-through;">133 DH</small>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary" style="margin-right:10px;border: none;background-color: #607D8B;color: white;padding: 10px 44px;">View</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary" style="display: none;">Edit</button>
-                            </div>
-                            <span class="text-muted" style="font-size: 20px; font-weight: bold;">100 DH</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
-    </div>
-
-
+    </section>
 
     <!--- start testimonoals-->
     <div class="container">
-
-
-        <div class="gtco-testimonials main-shadow">
+        <div class="gtco-testimonials main-shadow ">
             <header class="sec_header row ">
-                <h2>Testimonials <img style="width: 50px; height: 20px;" src="https://graciesprov.com/wp-content/uploads/2017/12/five-stars4.png" alt=""> (23 ratings) </h2>
-
+                <h2>Testimonials
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-half text-warning"></i> (23 ratings) </h2>
             </header>
             <div class="owl-carousel owl-carousel1 owl-theme">
                 <div>
@@ -234,11 +333,8 @@
                             <h5>Ronne Galle <br />
                                 <span> Project Manager </span>
                             </h5>
-
                             <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat ” </p>
-
                         </div>
-
                     </div>
                 </div>
                 <div>
@@ -277,96 +373,111 @@
 
 
 
-    <!---woman-->
-    <div class="container">
-
-        <div class="row product-bg main-shadow ">
-            <header class="sec_header">
-                <h2>Woman 13% Off</h2>
-
-            </header>
-
-
-
-            <div class="col-md-4">
-                <div class="card mb-4 box-shadow">
-                    <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="images/nbnbn.png" data-holder-rendered="true" style="width: 100%; display: block;">
-                    <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group  align-items-center">
-                                <button type="button" class="btn btn-sm btn-outline-secondary" style="border: none; display:flex;align-items: center; ">Men</button>
-                                <img style="width: 50px; height: 20px;" src="https://graciesprov.com/wp-content/uploads/2017/12/five-stars4.png" alt="">
-                            </div>
-                            <small class="text-muted" style="text-decoration: line-through;">133 DH</small>
+    <!---- Products row -->
+    <section>
+        <div class="container">
+            <div class="row bg-white mt-4  custom-border-top-black main-shadow main-shadow ">
+                <header class="sec_header p-2">
+                    <h2>Men</h2>
+                </header>
+                <div class="col-md-4 my-3">
+                    <div class="card  ">
+                        <div class="img_product_container">
+                            <img class="card-img-top w-100 d-block" alt="Product-thumbnail" src="https://startertemplatecloud.com/g02/wp-content/uploads/sites/11/2020/10/mug-02.jpg" data-holder-rendered="true">
                         </div>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary" style="margin-right:10px;border: none;background-color: #607D8B;color: white;padding: 10px 44px;">View</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary" style="display: none;">Edit</button>
+                        <div class="card-body">
+                            <h3 class="card-title h5">Black Nice Mug For Coffee</h3>
+                            <p class="card-text">This is a wider card with supporting text below </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group  align-items-center">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary" style="border: none; display:flex;align-items: center; ">Men</button>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-half text-warning"></i>
+                                </div>
+                                <small class="text-muted text-decoration-line-through"> 133 DH</small>
                             </div>
-                            <span class="text-muted" style="font-size: 20px; font-weight: bold;">100 DH</span>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary" style="margin-right:10px;border: none;background-color: #607D8B;color: white;padding: 10px 44px;">View</button>
+                                </div>
+                                <span class="text-muted fw-bold" style="font-size: 20px;">100 DH</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4  my-3">
+                    <div class="card  ">
+                        <div class="img_product_container">
+                            <img class="card-img-top w-100 d-block" alt="Product-thumbnail" src="https://startertemplatecloud.com/g02/wp-content/uploads/sites/11/2020/10/mug-02.jpg" data-holder-rendered="true">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title h5">Black Nice Mug For Coffee</h3>
+                            <p class="card-text">This is a wider card with supporting text below </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group  align-items-center">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary" style="border: none; display:flex;align-items: center; ">Men</button>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-half text-warning"></i>
+                                </div>
+                                <small class="text-muted text-decoration-line-through"> 133 DH</small>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary" style="margin-right:10px;border: none;background-color: #607D8B;color: white;padding: 10px 44px;">View</button>
+                                </div>
+                                <span class="text-muted fw-bold" style="font-size: 20px;">100 DH</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4  my-3">
+                    <div class="card">
+                        <span class="offer">30% OFF</span>
+                        <div class="img_product_container">
+                            <img class="card-img-top w-100 d-block" alt="Product-thumbnail" src="https://startertemplatecloud.com/g02/wp-content/uploads/sites/11/2020/10/mug-02.jpg" data-holder-rendered="true">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title h5">Black Nice Mug For Coffee</h3>
+                            <p class="card-text">This is a wider card with supporting text below </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group  align-items-center">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary" style="border: none; display:flex;align-items: center; ">Men</button>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-half text-warning"></i>
+                                </div>
+                                <small class="text-muted text-decoration-line-through"> 133 DH</small>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary" style="margin-right:10px;border: none;background-color: #607D8B;color: white;padding: 10px 44px;">View</button>
+                                </div>
+                                <span class="text-muted fw-bold" style="font-size: 20px;">100 DH</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="col-md-4">
-                <div class="card mb-4 box-shadow">
-                    <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="images/nbnbn.png" data-holder-rendered="true" style="width: 100%; display: block;">
-                    <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group  align-items-center">
-                                <button type="button" class="btn btn-sm btn-outline-secondary" style="border: none; display:flex;align-items: center; ">Men</button>
-                                <img style="width: 50px; height: 20px;" src="https://graciesprov.com/wp-content/uploads/2017/12/five-stars4.png" alt="">
-                            </div>
-                            <small class="text-muted" style="text-decoration: line-through;">133 DH</small>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary" style="margin-right:10px;border: none;background-color: #607D8B;color: white;padding: 10px 44px;">View</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary" style="display: none;">Edit</button>
-                            </div>
-                            <span class="text-muted" style="font-size: 20px; font-weight: bold;">100 DH</span>
-                        </div>
-                    </div>
-                    <span class="offer">30% OFF</span>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card mb-4 box-shadow">
-                    <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="images/nbnbn.png" data-holder-rendered="true" style="width: 100%; display: block;">
-                    <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group  align-items-center">
-                                <button type="button" class="btn btn-sm btn-outline-secondary" style="border: none; display:flex;align-items: center; ">Men</button>
-                                <img style="width: 50px; height: 20px;" src="https://graciesprov.com/wp-content/uploads/2017/12/five-stars4.png" alt="">
-                            </div>
-                            <small class="text-muted" style="text-decoration: line-through;">133 DH</small>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary" style="margin-right:10px;border: none;background-color: #607D8B;color: white;padding: 10px 44px;">View</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary" style="display: none;">Edit</button>
-                            </div>
-                            <span class="text-muted" style="font-size: 20px; font-weight: bold;">100 DH</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-
         </div>
-    </div>
+    </section>
+
+
+
+
+
+
+    <!---Footer-->
     <footer>
         <div class="container">
             <div class="row ">
-
                 <div class="col-md-4 contact-us">
                     <header>Contact </header>
                     <div class="social"><i class="bi bi-phone"></i></i> Phone / +212615290978</div>
