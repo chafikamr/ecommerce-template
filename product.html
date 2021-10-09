@@ -3,11 +3,16 @@
 <html lang="en" dir="ltr">
 
 <head>
+    <!--Show Loading Animation -->
     <script>
-        window.onload = function() {
+        window.onload = () => {
+
             document.querySelector('.load-container').style.display = "none";
+            document.querySelector('body').classList.remove("fixedPosition");
+
         }
     </script>
+
     <meta charset="utf-8">
     <title>Responsive Navbar | CodingNepal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,7 +30,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body id="body">
+<body id="body" class="fixedPosition">
     <div class="load-container">
         <div class="lds-ripple">
             <div></div>
@@ -67,7 +72,6 @@
             <div class="col-md-6">
                 <div class="product-thumb">
                     <div class="main-img"><img id="thumbmail" src="images/nbnbn.png" alt=""></div>
-
                 </div>
             </div>
             <div class="col-md-6">
@@ -105,7 +109,7 @@
                                         <i class="bi bi-dash-lg"></i>
                                     </button>
                                 </span>
-                                <input type="text" id="quantity" name="quantity" class="form-control input-number" value="10" min="1" max="100">
+                                <input type="text" id="quantity" name="quantity" class="form-control input-number" value="1" min="1" max="100">
                                 <span class="input-group-btn">
                                     <button type="button" class="quantity-right-plus btn btn-light btn-number" data-type="plus" data-field="">
                                         <i class="bi bi-plus-lg"></i>

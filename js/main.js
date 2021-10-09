@@ -1,3 +1,4 @@
+//Testimonials Carousel 
 (function() {
     "use strict";
 
@@ -34,24 +35,12 @@
 
 
 
-
+//body add overflow hidden when the navbar is open on mobile screens 
 
 $('.checkbtn').click(function() {
     $("body").toggleClass("fixedPosition");
 });
 
-
-
-// $(function() {
-//     $('#small-thumbs li').on('click', function() {
-//         let _img = $(this).find('img').attr('src');
-//         console.log(_img);
-//         $('#thumbmail').attr('src', _img);
-
-
-
-//     })
-// })
 
 
 $(document).ready(function() {

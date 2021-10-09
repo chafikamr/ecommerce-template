@@ -10,7 +10,10 @@
     <!--Show Loading Animation -->
     <script>
         window.onload = () => {
-            document.querySelector('.load-container').style.display = "none"
+
+            document.querySelector('.load-container').style.display = "none";
+            document.querySelector('body').classList.remove("fixedPosition");
+
         }
     </script>
 
@@ -38,7 +41,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body id="body">
+<body id="body" class="fixedPosition">
 
     <!--Loading Animation-->
     <div class="load-container">
@@ -69,7 +72,7 @@
                 <li style="text-align: right; color: white; ">
 
                     <label for="check">
-                        <i class="bi checkbtn x bi-x-square"></i>
+                        <i class="bi checkbtn d-block d-md-none bi-x-square"></i>
                     </label>
                 </li>
                 <li><a class="active" href="index.html">Home</a></li>
